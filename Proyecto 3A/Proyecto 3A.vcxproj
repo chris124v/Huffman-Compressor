@@ -129,6 +129,10 @@
   <ItemGroup>
     <ClCompile Include="Proyecto 3A.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="huffman.h" />
+    <ClInclude Include="Interface.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
