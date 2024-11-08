@@ -1,5 +1,7 @@
-// Proyecto 3A.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
+// Proyecto 3A.cpp 
+// Christopher Daniel Vargas Villalta, Carnet: 2024108443
+// Santiago Espinoza Rendon, Carnet: 2024156530
+
 
 #include <iostream>
 
