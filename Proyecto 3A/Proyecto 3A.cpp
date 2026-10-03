@@ -236,7 +236,7 @@ void showCompressionStats(const std::string& originalFile, const std::string& co
 }
 
 int main() {
-    std::string dataPath = "C:\\Users\\INTEL\\source\\repos\\Huffman2\\Huffman2\\Data\\";
+    std::string dataPath = "C:\\Users\\Christopher\\OneDrive\\Documents\\Notas";
 
     while (true) {
         displayLogo();
