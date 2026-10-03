@@ -1,6 +1,6 @@
 # Compresor de Archivos Huffman
 
-Programa de consola en C++ que comprime y descomprime cualquier archivo usando el **algoritmo de Huffman**, y muestra el tamaño original, el tamaño comprimido y el porcentaje de compresión. Hecho para el curso **Estructuras de Datos**.
+Programa de consola en C++ que comprime y descomprime cualquier archivo usando el algoritmo de Huffman, y muestra el tamaño original, el tamaño comprimido y el porcentaje de compresión. Hecho para el curso Estructuras de Datos.
 
 <p align="center">
   <img src="https://img.shields.io/badge/C%2B%2B-Visual%20Studio%202022-blue" alt="C++">
@@ -12,19 +12,22 @@ Programa de consola en C++ que comprime y descomprime cualquier archivo usando e
 ---
 
 ## Tabla de Contenidos
-- [Características](#características)
+- [Features](#features)
 - [Autores](#autores)
-- [Cómo Funciona](#cómo-funciona)
-- [Arquitectura](#arquitectura)
+- [Funcionalidad](#funcionalidad)
+- [Workflow](#workflow)
 - [Tecnologías](#tecnologías)
 - [Estructura del Proyecto](#estructura-del-proyecto)
-- [Cómo Ejecutar](#cómo-ejecutar)
-- [Qué Aprendí](#qué-aprendí)
+- [Compresion y Descompresion](#compresion-y-descompresion)
+- [Knowledge](#knowledge)
 - [Licencia](#licencia)
 
 ---
 
-## Características
+## Features
+
+Programa de consola en C++ dividido en la interfaz (`Interface.h`), las definiciones del algoritmo (`huffman.h`) y la implementación con el `main` (`Proyecto 3A.cpp`).
+
 * Comprime cualquier tipo de archivo (texto, imágenes BMP, etc.) a un archivo `.huf`.
 * Descomprime archivos `.huf` y recupera el archivo original.
 * Muestra estadísticas de compresión: tamaño original, tamaño comprimido y porcentaje de reducción.
@@ -35,14 +38,14 @@ Programa de consola en C++ que comprime y descomprime cualquier archivo usando e
 ---
 
 ## Autores
-* **Christopher Daniel Vargas Villalta** – [@chris124v](https://github.com/chris124v)
 * Santiago Espinoza Rendón
+* Christopher Daniel Vargas Villalta, 2023108443
 
 **Curso:** Estructuras de Datos
 
 ---
 
-## Cómo Funciona
+## Funcionalidad
 **Compresión**
 1. Se lee el archivo byte por byte y se cuenta cuántas veces aparece cada byte (tabla de frecuencias).
 2. Se construye el árbol de Huffman con una cola de prioridad: se unen repetidamente los dos nodos de menor frecuencia hasta quedar un solo árbol.
@@ -59,8 +62,8 @@ Programa de consola en C++ que comprime y descomprime cualquier archivo usando e
 
 ---
 
-## Arquitectura
-Programa de consola en C++ dividido en la interfaz (`Interface.h`), las definiciones del algoritmo (`huffman.h`) y la implementación con el `main` (`Proyecto 3A.cpp`).
+## Workflow
+A continuacion se detalla el flujo de trabajo de la comprension y descompresion de archivos.
 
 ```mermaid
 flowchart LR
@@ -85,7 +88,7 @@ flowchart LR
 
 ## Tecnologías
 * C++ con Visual Studio 2022 (toolset v143, Windows).
-* Solo biblioteca estándar de C++ (`<fstream>`, `<queue>`, `<map>`, etc.). Sin dependencias externas.
+* Solo biblioteca estándar de C++ (`<fstream>`, `<queue>`, `<map>`, etc.).
 
 ---
 
@@ -103,7 +106,7 @@ Proyecto-3A/
 
 ---
 
-## Cómo Ejecutar
+## Compresion y Descompresion
 
 ### Requisitos previos
 * Windows con **Visual Studio 2022** y el componente *Desarrollo para el escritorio con C++*.
@@ -125,11 +128,10 @@ Proyecto-3A/
 
 ---
 
-## Qué Aprendí
+## Knowledge
 * A implementar el algoritmo de Huffman: tabla de frecuencias, árbol binario, cola de prioridad y generación de códigos.
 * A manipular bits para guardar los códigos de longitud variable en bytes, incluyendo el relleno del último byte.
 * A leer y escribir archivos en modo binario y a medir la eficiencia con el porcentaje de compresión.
-* Con más tiempo: guardar la ruta de datos en un parámetro o en un archivo de configuración en lugar de dejarla fija en el código, y liberar la memoria del árbol al terminar.
 
 ---
 
